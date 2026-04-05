@@ -1,0 +1,510 @@
+/* ============================================
+   style.css — Smart Campus Navigation
+   Shared across ALL pages
+   ============================================ */
+
+/* ---------- Reset & Base ---------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f4f8;
+  color: #222;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* ---------- Navbar ---------- */
+.navbar {
+  background-color: #1a3c5e;
+  color: #fff;
+  padding: 14px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navbar .logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.navbar .nav-links a {
+  color: #fff;
+  margin-left: 20px;
+  font-size: 0.95rem;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.navbar .nav-links a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+/* ---------- Page Header ---------- */
+.page-header {
+  background-color: #1a3c5e;
+  color: #fff;
+  text-align: center;
+  padding: 36px 20px 28px;
+}
+
+.page-header h1 {
+  font-size: 1.9rem;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.page-header p {
+  font-size: 1rem;
+  opacity: 0.8;
+}
+
+/* ---------- Main Container ---------- */
+.container {
+  max-width: 960px;
+  margin: 40px auto;
+  padding: 0 20px;
+}
+
+/* ---------- Buttons ---------- */
+.btn {
+  display: inline-block;
+  background-color: #1a3c5e;
+  color: #fff;
+  padding: 10px 22px;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn:hover {
+  background-color: #14304d;
+}
+
+.btn-outline {
+  background-color: transparent;
+  border: 2px solid #1a3c5e;
+  color: #1a3c5e;
+}
+
+.btn-outline:hover {
+  background-color: #1a3c5e;
+  color: #fff;
+}
+
+/* =============================================
+   LOGIN PAGE
+   ============================================= */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: #e8eef4;
+}
+
+.login-box {
+  background: #fff;
+  border: 1px solid #ccd8e4;
+  border-radius: 10px;
+  padding: 40px 36px;
+  width: 100%;
+  max-width: 400px;
+}
+
+.login-box .login-title {
+  text-align: center;
+  margin-bottom: 8px;
+  font-size: 1.5rem;
+  color: #1a3c5e;
+  font-weight: 700;
+}
+
+.login-box .login-subtitle {
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+  margin-bottom: 26px;
+}
+
+.login-box label {
+  display: block;
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: #444;
+  margin-bottom: 6px;
+}
+
+.login-box input[type="text"],
+.login-box input[type="password"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid #bbc8d4;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  color: #222;
+  background: #f7f9fb;
+  margin-bottom: 18px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.login-box input:focus {
+  border-color: #1a3c5e;
+  background: #fff;
+}
+
+.login-box .btn {
+  width: 100%;
+  padding: 11px;
+  font-size: 1rem;
+}
+
+.login-error {
+  display: none;
+  color: #c0392b;
+  background: #fdecea;
+  border: 1px solid #f5c6c2;
+  border-radius: 6px;
+  padding: 9px 12px;
+  font-size: 0.88rem;
+  margin-bottom: 14px;
+  text-align: center;
+}
+
+/* =============================================
+   CAMPUS SELECTION PAGE
+   ============================================= */
+.campus-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 28px;
+  margin-top: 10px;
+}
+
+.campus-card {
+  background: #fff;
+  border: 1px solid #ccd8e4;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.campus-card:hover {
+  box-shadow: 0 6px 20px rgba(26, 60, 94, 0.15);
+  transform: translateY(-3px);
+}
+
+.campus-card img {
+  width: 100%;
+  height: 190px;
+  object-fit: cover;
+  background-color: #c8d8e8;
+}
+
+.campus-card .card-body {
+  padding: 18px 20px 22px;
+}
+
+.campus-card .card-body h2 {
+  font-size: 1.2rem;
+  color: #1a3c5e;
+  margin-bottom: 6px;
+}
+
+.campus-card .card-body p {
+  font-size: 0.88rem;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 14px;
+}
+
+/* campus image placeholder */
+.img-placeholder {
+  width: 100%;
+  height: 190px;
+  background-color: #c8d8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  color: #5a7a99;
+}
+
+/* =============================================
+   MAP PAGE — Interactive Overlay
+   ============================================= */
+.map-section {
+  margin-bottom: 32px;
+}
+
+.map-section h2 {
+  font-size: 1.15rem;
+  color: #1a3c5e;
+  margin-bottom: 8px;
+  font-weight: 600;
+}
+
+.map-hint {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 12px;
+}
+
+/* The map container — image + zones layered on top */
+.map-container {
+  position: relative;
+  width: 100%;
+  border: 2px solid #c2d3e3;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #d4e3ef;
+  user-select: none;
+}
+
+.map-container img {
+  width: 100%;
+  height: auto;        /* show the full image — no cropping */
+  display: block;
+  object-fit: contain;
+}
+
+/* Placeholder shown when no image is available */
+.map-img-placeholder {
+  width: 100%;
+  height: 420px;
+  background-color: #d4e3ef;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a7a99;
+  font-size: 0.9rem;
+}
+
+/* ---- Clickable zone overlay ---- */
+.map-zone {
+  position: absolute;
+  background-color: rgba(26, 60, 94, 0.25);
+  border: 2px solid rgba(26, 60, 94, 0.7);
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s, border-color 0.2s;
+}
+
+.map-zone:hover {
+  background-color: rgba(26, 60, 94, 0.55);
+  border-color: #1a3c5e;
+}
+
+/* Label shown inside the zone */
+.zone-label {
+  background-color: #1a3c5e;
+  color: #fff;
+  font-size: 0.78rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+}
+
+/* Adjust zone note */
+.zone-adjust-note {
+  font-size: 0.78rem;
+  color: #888;
+  margin-top: 8px;
+  font-style: italic;
+}
+
+.back-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #1a3c5e;
+  font-size: 0.9rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+}
+
+/* =============================================
+   DETAILS PAGE
+   ============================================= */
+.details-card {
+  background: #fff;
+  border: 1px solid #ccd8e4;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.details-card .details-image {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  background-color: #c8d8e8;
+}
+
+.details-img-placeholder {
+  width: 100%;
+  height: 280px;
+  background-color: #c8d8e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #5a7a99;
+  font-size: 0.9rem;
+}
+
+.details-body {
+  padding: 28px 30px 34px;
+}
+
+.details-body h2 {
+  font-size: 1.6rem;
+  color: #1a3c5e;
+  margin-bottom: 14px;
+  font-weight: 700;
+}
+
+.details-body p.description {
+  font-size: 0.97rem;
+  color: #444;
+  line-height: 1.7;
+  margin-bottom: 22px;
+}
+
+.details-info-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 24px;
+}
+
+.details-info-table td {
+  padding: 10px 14px;
+  font-size: 0.9rem;
+  border: 1px solid #dde8f0;
+}
+
+.details-info-table td:first-child {
+  font-weight: 600;
+  color: #1a3c5e;
+  width: 30%;
+  background-color: #f0f5fa;
+}
+
+/* Sections list — inside-building breakdown */
+.sections-list {
+  list-style: none;
+  margin-bottom: 24px;
+  border: 1px solid #dde8f0;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.section-item {
+  display: flex;
+  align-items: baseline;
+  gap: 12px;
+  padding: 10px 14px;
+  border-bottom: 1px solid #dde8f0;
+  font-size: 0.9rem;
+}
+
+.section-item:last-child {
+  border-bottom: none;
+}
+
+.section-label {
+  font-weight: 700;
+  color: #1a3c5e;
+  min-width: 130px;
+  flex-shrink: 0;
+}
+
+.section-detail {
+  color: #444;
+  line-height: 1.5;
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+.footer {
+  background-color: #1a3c5e;
+  color: #aac0d4;
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 0.85rem;
+  margin-top: 60px;
+}
+
+/* =============================================
+   ERROR / LOADING STATE
+   ============================================= */
+.loading-text {
+  text-align: center;
+  color: #666;
+  padding: 40px 0;
+  font-size: 0.95rem;
+}
+
+.error-text {
+  text-align: center;
+  color: #c0392b;
+  padding: 40px 0;
+  font-size: 0.95rem;
+}
+
+/* =============================================
+   RESPONSIVE — Mobile
+   ============================================= */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .page-header h1 {
+    font-size: 1.4rem;
+  }
+
+  .building-buttons {
+    flex-direction: column;
+  }
+
+  .building-btn {
+    width: 100%;
+    text-align: center;
+  }
+
+  .details-body {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ITM Sithouli Campus Map — Click on a building to view its details." />
+  <title>Sithouli Campus Map — Smart Campus Navigation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Smart Campus Navigation</span>
+    <div class="nav-links">
+      <a href="campus.html">Campuses</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>ITM Sithouli Campus</h1>
+    <p>Click on any highlighted area to view building details</p>
+  </header>
+
+  <!-- MAP -->
+  <main class="container">
+
+    <a class="back-link" href="campus.html">&larr; Back to Campus Selection</a>
+
+    <div class="map-section">
+      <h2>Campus Map</h2>
+      <p class="map-hint">&#128161; Hover over a zone to highlight it, then click to see details.</p>
+
+      <!--
+        MAP CONTAINER
+        ─────────────────────────────────────────────────────────────────
+        HOW TO ADJUST ZONES after you add your screenshot:
+          1. Open the page in browser
+          2. Use browser DevTools (F12) → inspect a .map-zone
+          3. Tweak top/left/width/height until it covers the right area
+          4. Copy those values back here
+        ─────────────────────────────────────────────────────────────────
+      -->
+      <div class="map-container" id="sithouli-map-container">
+
+        <!-- Campus map screenshot goes here -->
+        <img src="images/sithouli-map.jpg" alt="ITM Sithouli Campus Map" id="sithouli-map-img" />
+
+        <!-- ① Academic Block Zone -->
+        <a
+          href="details.html?campus=sithouli&building=academic-block"
+          class="map-zone"
+          id="zone-sithouli-academic"
+          title="Academic Block"
+          style="top: 15%; left: 12%; width: 30%; height: 24%;"
+        >
+          <span class="zone-label">Academic Block</span>
+        </a>
+
+        <!-- ② Hostel Zone -->
+        <a
+          href="details.html?campus=sithouli&building=hostel"
+          class="map-zone"
+          id="zone-sithouli-hostel"
+          title="Hostel"
+          style="top: 55%; left: 58%; width: 22%; height: 20%;"
+        >
+          <span class="zone-label">Hostel</span>
+        </a>
+
+        <!-- ③ Canteen Zone -->
+        <a
+          href="details.html?campus=sithouli&building=canteen"
+          class="map-zone"
+          id="zone-sithouli-canteen"
+          title="Canteen"
+          style="top: 58%; left: 18%; width: 20%; height: 16%;"
+        >
+          <span class="zone-label">Canteen</span>
+        </a>
+
+      </div>
+
+      <p class="zone-adjust-note">
+        * Zone positions are approximate. Adjust the top/left/width/height values
+        in sithouli-map.html to match your actual screenshots.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2024 Smart Campus Navigation &mdash; ITM University
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

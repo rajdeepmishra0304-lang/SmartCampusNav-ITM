@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Select your ITM campus — Turari or Sithouli — to explore the campus map." />
+  <title>Select Campus — Smart Campus Navigation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Smart Campus Navigation</span>
+    <div class="nav-links">
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Select Your Campus</h1>
+    <p>Choose a campus below to view its map and building details</p>
+  </header>
+
+  <!-- CAMPUS CARDS -->
+  <main class="container">
+    <div class="campus-grid">
+
+      <!-- ITM Turari Card -->
+      <div class="campus-card" id="turari-card" onclick="window.location.href='turari-map.html'">
+        <img src="images/turari.png" alt="ITM Turari Campus" />
+        <div class="card-body">
+          <h2>ITM Turari Campus</h2>
+          <p>
+            Located in Turari, this campus is the main hub for engineering
+            and technology programs at ITM University.
+          </p>
+          <button class="btn">View Map &rarr;</button>
+        </div>
+      </div>
+
+      <!-- ITM Sithouli Card -->
+      <div class="campus-card" id="sithouli-card" onclick="window.location.href='sithouli-map.html'">
+        <img src="images/sithouli.jpg" alt="ITM Sithouli Campus" />
+        <div class="card-body">
+          <h2>ITM Sithouli Campus</h2>
+          <p>
+            The Sithouli campus offers modern infrastructure and a
+            wide range of undergraduate and postgraduate programmes.
+          </p>
+          <button class="btn">View Map &rarr;</button>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2024 Smart Campus Navigation &mdash; ITM University
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

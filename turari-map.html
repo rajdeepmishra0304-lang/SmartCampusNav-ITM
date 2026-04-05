@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ITM Turari Campus Map — Click on a building to view its details." />
+  <title>Turari Campus Map — Smart Campus Navigation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Smart Campus Navigation</span>
+    <div class="nav-links">
+      <a href="campus.html">Campuses</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>ITM Turari Campus</h1>
+    <p>Click on any highlighted area to view building details</p>
+  </header>
+
+  <!-- MAP -->
+  <main class="container">
+
+    <a class="back-link" href="campus.html">&larr; Back to Campus Selection</a>
+
+    <div class="map-section">
+      <h2>Campus Map</h2>
+      <p class="map-hint">&#128161; Hover over a zone to highlight it, then click to see details.</p>
+
+      <!--
+        MAP CONTAINER
+        ─────────────────────────────────────────────────────────────────
+        Each .map-zone is positioned using percentages (top, left, width,
+        height relative to the map image).
+
+        HOW TO ADJUST ZONES after you add your screenshot:
+          1. Open the page in browser
+          2. Use browser DevTools (F12) → inspect a .map-zone
+          3. Tweak top/left/width/height until it covers the right area
+          4. Copy those values back here
+        ─────────────────────────────────────────────────────────────────
+      -->
+      <div class="map-container" id="turari-map-container">
+
+        <!-- Campus map screenshot goes here -->
+        <img src="images/turari-map.JPG" alt="ITM Turari Campus Map" id="turari-map-img" />
+
+        <!-- ① Academic Block Zone -->
+        <a href="details.html?campus=turari&building=academic-block" class="map-zone" id="zone-turari-academic"
+          title="JC Bose Block" style="top: 45%; left: 17%; width: 5%; height: 15%;">
+          <span class="zone-label">JC Bose Block</span>
+        </a>
+
+        <!-- ② Hostel Zone -->
+        <a href="details.html?campus=turari&building=hostel" class="map-zone" id="zone-turari-hostel" title="Hostel"
+          style="top: 50%; left: 42%; width: 28%; height: 24%;">
+          <span class="zone-label">Hostel</span>
+        </a>
+
+        <!-- ③ Canteen Zone -->
+        <a href="details.html?campus=turari&building=canteen" class="map-zone" id="zone-turari-canteen" title="Canteen"
+          style="top: 2%; left: 27%; width: 10%; height: 18%;">
+          <span class="zone-label">Canteen</span>
+        </a>
+
+        <!-- ④ Leonardo da Vinci Block -->
+        <a href="details.html?campus=turari&building=leonardo-block" class="map-zone" id="zone-turari-leonardo"
+          title="Leonardo da Vinci Block" style="top: 66%; left: 47%; width: 7%; height: 12%;">
+          <span class="zone-label">Leonardo da Vinci Block</span>
+        </a>
+
+        <!-- ⑤ Mahatma Gandhi Block -->
+        <a href="details.html?campus=turari&building=gandhi-block" class="map-zone" id="zone-turari-gandhi"
+          title="Mahatma Gandhi Block" style="top: 45%; left: 35%; width: 7%; height: 12%;">
+          <span class="zone-label">Mahatma Gandhi Block</span>
+        </a>
+
+        <!-- ⑥ Kirloskar Block -->
+        <a href="details.html?campus=turari&building=kirloskar-block" class="map-zone" id="zone-turari-kirloskar"
+          title="Kirloskar Block" style="top: 22%; left: 38%; width: 8%; height: 10%;">
+          <span class="zone-label">Kirloskar Block</span>
+        </a>
+
+        <!-- ⑦ Sports Department -->
+        <a href="details.html?campus=turari&building=sports-department" class="map-zone" id="zone-turari-sports"
+          title="Sports Department" style="top: 75%; left: 65%; width: 10%; height: 16%;">
+          <span class="zone-label">Sports Department</span>
+        </a>
+
+      </div>
+
+      <p class="zone-adjust-note">
+        *Zone positions are approximate and not to scale.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2026 Smart Campus Navigation &mdash; ITM University
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+
+</html>

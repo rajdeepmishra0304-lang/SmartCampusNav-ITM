@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Building Details — Smart Campus Navigation" />
+  <title>Building Details — Smart Campus Navigation</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <span class="logo">Smart Campus Navigation</span>
+    <div class="nav-links">
+      <a href="campus.html">Campuses</a>
+      <a href="index.html">Logout</a>
+    </div>
+  </nav>
+
+  <!-- PAGE HEADER -->
+  <header class="page-header">
+    <h1>Building Details</h1>
+    <p>Detailed information about the selected building</p>
+  </header>
+
+  <!-- DETAILS CONTENT (filled by script.js) -->
+  <main class="container">
+
+    <!-- Back link -->
+    <a class="back-link" onclick="history.back()" href="#">&larr; Back to Map</a>
+
+    <!-- script.js will inject card HTML here -->
+    <div id="details-container">
+      <p class="loading-text">Loading details...</p>
+    </div>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    &copy; 2024 Smart Campus Navigation &mdash; ITM University
+  </footer>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
