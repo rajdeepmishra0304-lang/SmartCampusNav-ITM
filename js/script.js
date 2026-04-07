@@ -1,13 +1,8 @@
-/* ============================================================
-   script.js — Smart Campus Navigation
-   Handles: Login, URL params, inline data lookup, DOM update
-   ============================================================ */
+/* script.js — Smart Campus Navigation
+   Will manage-Login, URL params, inline data lookup, DOM update*/
 
 
-/* ============================================================
-   INLINE DATA — Turari campus only
-   (No fetch needed — works from file:// without a server)
-   ============================================================ */
+/* INLINE DATA — Turari campus*/
 var CAMPUS_DATA = {
   "turari": {
     "campus_name": "ITM Turari Campus",
@@ -21,9 +16,9 @@ var CAMPUS_DATA = {
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "CSE & IT Department offices, Computer Lab 1 & 2" },
-          { "label": "First Floor",  "detail": "Mechanical & Civil Engineering classrooms, Drawing Hall" },
+          { "label": "First Floor", "detail": "Mechanical & Civil Engineering classrooms, Drawing Hall" },
           { "label": "Second Floor", "detail": "Electronics & Electrical labs, Seminar Hall (200 seats)" },
-          { "label": "Third Floor",  "detail": "Faculty cabins, Principal Office, Conference Room" }
+          { "label": "Third Floor", "detail": "Faculty cabins, Principal Office, Conference Room" }
         ]
       },
       "hostel": {
@@ -36,8 +31,8 @@ var CAMPUS_DATA = {
         "sections": [
           { "label": "Boys Block A", "detail": "120 rooms, double occupancy, AC & Non-AC options" },
           { "label": "Boys Block B", "detail": "80 rooms, Wi-Fi enabled, 24/7 security" },
-          { "label": "Girls Block",  "detail": "100 rooms, separate warden, CCTV surveillance" },
-          { "label": "Common Area",  "detail": "TV lounge, indoor games, RO water facility" }
+          { "label": "Girls Block", "detail": "100 rooms, separate warden, CCTV surveillance" },
+          { "label": "Common Area", "detail": "TV lounge, indoor games, RO water facility" }
         ]
       },
       "canteen": {
@@ -48,10 +43,10 @@ var CAMPUS_DATA = {
         "capacity": "300 Seats",
         "timing": "7:00 AM \u2013 9:00 PM",
         "sections": [
-          { "label": "Main Kitchen",    "detail": "Breakfast, lunch & dinner thali \u2014 \u20b930 to \u20b960" },
-          { "label": "Snacks Counter",  "detail": "Samosa, bread omelette, Maggi, sandwiches" },
-          { "label": "Juice Bar",       "detail": "Fresh fruit juices, cold drinks, tea & coffee" },
-          { "label": "Stationary",      "detail": "Notebooks, pens, printing & photocopy service" }
+          { "label": "Main Kitchen", "detail": "Breakfast, lunch & dinner thali \u2014 \u20b930 to \u20b960" },
+          { "label": "Snacks Counter", "detail": "Samosa, bread omelette, Maggi, sandwiches" },
+          { "label": "Juice Bar", "detail": "Fresh fruit juices, cold drinks, tea & coffee" },
+          { "label": "Stationary", "detail": "Notebooks, pens, printing & photocopy service" }
         ]
       },
       "leonardo-block": {
@@ -63,7 +58,7 @@ var CAMPUS_DATA = {
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "Innovation Lab, Robotics Lab, 3D Printing Studio" },
-          { "label": "First Floor",  "detail": "Project Development Rooms, Group Study Areas" },
+          { "label": "First Floor", "detail": "Project Development Rooms, Group Study Areas" },
           { "label": "Second Floor", "detail": "Research Lab, Faculty Offices, Conference Room" }
         ]
       },
@@ -76,7 +71,7 @@ var CAMPUS_DATA = {
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "MBA Classrooms, Case Study Room, Placement Cell" },
-          { "label": "First Floor",  "detail": "BBA Classrooms, Commerce Labs, Seminar Hall" },
+          { "label": "First Floor", "detail": "BBA Classrooms, Commerce Labs, Seminar Hall" },
           { "label": "Second Floor", "detail": "Media Room, Language Lab, HOD Office" }
         ]
       },
@@ -89,7 +84,7 @@ var CAMPUS_DATA = {
         "timing": "8:00 AM \u2013 5:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "Mechanical Workshop, Welding Lab, Fitting Shop" },
-          { "label": "First Floor",  "detail": "Electrical Lab, Power Electronics Lab, Control Systems Room" }
+          { "label": "First Floor", "detail": "Electrical Lab, Power Electronics Lab, Control Systems Room" }
         ]
       },
       "sports-department": {
@@ -100,10 +95,10 @@ var CAMPUS_DATA = {
         "capacity": "500 Students",
         "timing": "6:00 AM \u2013 8:00 PM",
         "sections": [
-          { "label": "Cricket Ground",    "detail": "Full-size cricket pitch with practice nets" },
-          { "label": "Basketball Court",  "detail": "Two courts, open for students after 4 PM" },
-          { "label": "Volleyball Court",  "detail": "Available for inter-department tournaments" },
-          { "label": "Sports Room",       "detail": "Chess, table tennis, carrom, indoor games equipment" }
+          { "label": "Cricket Ground", "detail": "Full-size cricket pitch with practice nets" },
+          { "label": "Basketball Court", "detail": "Two courts, open for students after 4 PM" },
+          { "label": "Volleyball Court", "detail": "Available for inter-department tournaments" },
+          { "label": "Sports Room", "detail": "Chess, table tennis, carrom, indoor games equipment" }
         ]
       }
     }
@@ -161,7 +156,7 @@ function initMapPage() {
 
   buttons.forEach(function (btn) {
     btn.addEventListener("click", function () {
-      var campus   = btn.getAttribute("data-campus");
+      var campus = btn.getAttribute("data-campus");
       var building = btn.getAttribute("data-building");
       window.location.href = "details.html?campus=" + campus + "&building=" + building;
     });
@@ -177,7 +172,7 @@ function initDetailsPage() {
   var container = document.getElementById("details-container");
   if (!container) return;
 
-  var campus   = getParam("campus");
+  var campus = getParam("campus");
   var building = getParam("building");
 
   if (!campus || !building) {
@@ -212,8 +207,8 @@ function renderDetails(container, b, campusName) {
     for (var i = 0; i < b.sections.length; i++) {
       sectionsHTML +=
         '<li class="section-item">' +
-          '<span class="section-label">' + b.sections[i].label + '</span>' +
-          '<span class="section-detail">' + b.sections[i].detail + '</span>' +
+        '<span class="section-label">' + b.sections[i].label + '</span>' +
+        '<span class="section-detail">' + b.sections[i].detail + '</span>' +
         '</li>';
     }
     sectionsHTML += '</ul>';
@@ -221,19 +216,19 @@ function renderDetails(container, b, campusName) {
 
   container.innerHTML =
     '<div class="details-card">' +
-      imageHTML +
-      '<div class="details-body">' +
-        '<h2>' + b.name + '</h2>' +
-        '<p class="description">' + b.description + '</p>' +
-        '<table class="details-info-table">' +
-          '<tr><td>Campus</td><td>'   + campusName + '</td></tr>' +
-          '<tr><td>Floor</td><td>'    + b.floor    + '</td></tr>' +
-          '<tr><td>Capacity</td><td>' + b.capacity + '</td></tr>' +
-          '<tr><td>Timings</td><td>'  + b.timing   + '</td></tr>' +
-        '</table>' +
-        sectionsHTML +
-        '<button class="btn" style="margin-top:22px;" onclick="history.back()">&#8592; Go Back</button>' +
-      '</div>' +
+    imageHTML +
+    '<div class="details-body">' +
+    '<h2>' + b.name + '</h2>' +
+    '<p class="description">' + b.description + '</p>' +
+    '<table class="details-info-table">' +
+    '<tr><td>Campus</td><td>' + campusName + '</td></tr>' +
+    '<tr><td>Floor</td><td>' + b.floor + '</td></tr>' +
+    '<tr><td>Capacity</td><td>' + b.capacity + '</td></tr>' +
+    '<tr><td>Timings</td><td>' + b.timing + '</td></tr>' +
+    '</table>' +
+    sectionsHTML +
+    '<button class="btn" style="margin-top:22px;" onclick="history.back()">&#8592; Go Back</button>' +
+    '</div>' +
     '</div>';
 }
 
