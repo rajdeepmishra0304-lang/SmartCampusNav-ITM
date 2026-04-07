@@ -2,7 +2,7 @@
   "turari": {
     "campus_name": "ITM Turari Campus",
     "buildings": {
-      "academic-block": {
+      "jcb-block": {
         "name": "JC Bose Block",
         "description": "The JC Bose block mainly hosts classes for electrical students and is well equipped with proper labs and equipments. It also has the ERP cell and VC office.",
         "image": "images/jcb-block.jpg",
@@ -28,7 +28,7 @@
           }
         ]
       },
-      "hostel": {
+      "pcb-block": {
         "name": "PCB Block",
         "description": "The PCB Block is the academic block for students pursuing pure science subjects like forensics, pharmacy etc.",
         "image": "images/pcb-block.jpg",
