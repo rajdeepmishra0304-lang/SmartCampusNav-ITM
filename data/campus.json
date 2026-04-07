@@ -10,10 +10,22 @@
         "capacity": "2000 Students",
         "timing": "8:00 AM – 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "CSE & IT Department offices, Computer Lab 1 & 2" },
-          { "label": "First Floor",  "detail": "Mechanical & Civil Engineering classrooms, Drawing Hall" },
-          { "label": "Second Floor", "detail": "Electronics & Electrical labs, Seminar Hall (200 seats)" },
-          { "label": "Third Floor",  "detail": "Faculty cabins, Principal Office, Conference Room" }
+          {
+            "label": "Ground Floor",
+            "detail": "CSE & IT Department offices, Computer Lab 1 & 2"
+          },
+          {
+            "label": "First Floor",
+            "detail": "Mechanical & Civil Engineering classrooms, Drawing Hall"
+          },
+          {
+            "label": "Second Floor",
+            "detail": "Electronics & Electrical labs, Seminar Hall (200 seats)"
+          },
+          {
+            "label": "Third Floor",
+            "detail": "Faculty cabins, Principal Office, Conference Room"
+          }
         ]
       },
       "hostel": {
@@ -24,10 +36,22 @@
         "capacity": "500 Students",
         "timing": "Open 24 Hours",
         "sections": [
-          { "label": "Boys Block A",  "detail": "120 rooms, double occupancy, AC & Non-AC options" },
-          { "label": "Boys Block B",  "detail": "80 rooms, Wi-Fi enabled, 24/7 security" },
-          { "label": "Girls Block",   "detail": "100 rooms, separate warden, CCTV surveillance" },
-          { "label": "Common Area",   "detail": "TV lounge, indoor games, RO water facility" }
+          {
+            "label": "Boys Block A",
+            "detail": "120 rooms, double occupancy, AC & Non-AC options"
+          },
+          {
+            "label": "Boys Block B",
+            "detail": "80 rooms, Wi-Fi enabled, 24/7 security"
+          },
+          {
+            "label": "Girls Block",
+            "detail": "100 rooms, separate warden, CCTV surveillance"
+          },
+          {
+            "label": "Common Area",
+            "detail": "TV lounge, indoor games, RO water facility"
+          }
         ]
       },
       "canteen": {
@@ -38,10 +62,22 @@
         "capacity": "300 Seats",
         "timing": "7:00 AM – 9:00 PM",
         "sections": [
-          { "label": "Main Kitchen",   "detail": "Breakfast, lunch & dinner thali — ₹30 to ₹60" },
-          { "label": "Snacks Counter", "detail": "Samosa, bread omelette, Maggi, sandwiches" },
-          { "label": "Juice Bar",      "detail": "Fresh fruit juices, cold drinks, tea & coffee" },
-          { "label": "Stationary",     "detail": "Notebooks, pens, printing & photocopy service" }
+          {
+            "label": "Main Kitchen",
+            "detail": "Breakfast, lunch & dinner thali — ₹30 to ₹60"
+          },
+          {
+            "label": "Snacks Counter",
+            "detail": "Samosa, bread omelette, Maggi, sandwiches"
+          },
+          {
+            "label": "Juice Bar",
+            "detail": "Fresh fruit juices, cold drinks, tea & coffee"
+          },
+          {
+            "label": "Stationary",
+            "detail": "Notebooks, pens, printing & photocopy service"
+          }
         ]
       },
       "leonardo-block": {
@@ -52,9 +88,18 @@
         "capacity": "800 Students",
         "timing": "8:00 AM – 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "Innovation Lab, Robotics Lab, 3D Printing Studio" },
-          { "label": "First Floor",  "detail": "Project Development Rooms, Group Study Areas" },
-          { "label": "Second Floor", "detail": "Research Lab, Faculty Offices, Conference Room" }
+          {
+            "label": "Ground Floor",
+            "detail": "Innovation Lab, Robotics Lab, 3D Printing Studio"
+          },
+          {
+            "label": "First Floor",
+            "detail": "Project Development Rooms, Group Study Areas"
+          },
+          {
+            "label": "Second Floor",
+            "detail": "Research Lab, Faculty Offices, Conference Room"
+          }
         ]
       },
       "gandhi-block": {
@@ -65,9 +110,18 @@
         "capacity": "1000 Students",
         "timing": "8:00 AM – 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "MBA Classrooms, Case Study Room, Placement Cell" },
-          { "label": "First Floor",  "detail": "BBA Classrooms, Commerce Labs, Seminar Hall" },
-          { "label": "Second Floor", "detail": "Media Room, Language Lab, HOD Office" }
+          {
+            "label": "Ground Floor",
+            "detail": "MBA Classrooms, Case Study Room, Placement Cell"
+          },
+          {
+            "label": "First Floor",
+            "detail": "BBA Classrooms, Commerce Labs, Seminar Hall"
+          },
+          {
+            "label": "Second Floor",
+            "detail": "Media Room, Language Lab, HOD Office"
+          }
         ]
       },
       "kirloskar-block": {
@@ -78,8 +132,14 @@
         "capacity": "600 Students",
         "timing": "8:00 AM – 5:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "Mechanical Workshop, Welding Lab, Fitting Shop" },
-          { "label": "First Floor",  "detail": "Electrical Lab, Power Electronics Lab, Control Systems Room" }
+          {
+            "label": "Ground Floor",
+            "detail": "Mechanical Workshop, Welding Lab, Fitting Shop"
+          },
+          {
+            "label": "First Floor",
+            "detail": "Electrical Lab, Power Electronics Lab, Control Systems Room"
+          }
         ]
       },
       "sports-department": {
@@ -90,58 +150,22 @@
         "capacity": "500 Students",
         "timing": "6:00 AM – 8:00 PM",
         "sections": [
-          { "label": "Cricket Ground",  "detail": "Full-size cricket pitch with practice nets" },
-          { "label": "Basketball Court","detail": "Two courts, open for students after 4 PM" },
-          { "label": "Volleyball Court","detail": "Available for inter-department tournaments" },
-          { "label": "Sports Room",     "detail": "Chess, table tennis, carrom, indoor games equipment" }
-        ]
-      }
-    }
-  },
-  "sithouli": {
-    "campus_name": "ITM Sithouli Campus",
-    "buildings": {
-      "academic-block": {
-        "name": "Academic Block",
-        "description": "The Sithouli Academic Block is a modern five-floor facility with smart classrooms, advanced engineering labs, and a central library.",
-        "image": "images/sithouli-academic.jpg",
-        "floor": "5 Floors",
-        "capacity": "2500 Students",
-        "timing": "8:00 AM – 6:00 PM",
-        "sections": [
-          { "label": "Ground Floor", "detail": "Library, Reading Room, Administration Office" },
-          { "label": "First Floor",  "detail": "CSE smart classrooms, AI/ML Lab, IoT Lab" },
-          { "label": "Second Floor", "detail": "Mechanical labs, CAD/CAM Lab, Workshop" },
-          { "label": "Third Floor",  "detail": "MBA & MCA classrooms, Language Lab" },
-          { "label": "Fourth Floor", "detail": "Research Centre, Faculty offices, VC Office" }
-        ]
-      },
-      "hostel": {
-        "name": "Hostel",
-        "description": "Sithouli campus hostel offers well-maintained rooms with attached washrooms, study tables, and high-speed internet for 800 students.",
-        "image": "images/sithouli-hostel.jpg",
-        "floor": "4 Floors",
-        "capacity": "800 Students",
-        "timing": "Open 24 Hours",
-        "sections": [
-          { "label": "Boys Hostel",  "detail": "200 rooms, attached bathroom, 24-hr hot water" },
-          { "label": "Girls Hostel", "detail": "150 rooms, biometric entry, in-campus warden" },
-          { "label": "Gym",          "detail": "Fully equipped gym, open 6 AM – 9 PM" },
-          { "label": "Recreation",   "detail": "TV lounge, carrom, chess, table tennis" }
-        ]
-      },
-      "canteen": {
-        "name": "Canteen",
-        "description": "The Sithouli canteen is spacious and well-maintained, offering a wide variety of snacks and meals with a separate faculty section.",
-        "image": "images/sithouli-canteen.jpg",
-        "floor": "Ground Floor",
-        "capacity": "400 Seats",
-        "timing": "7:00 AM – 9:00 PM",
-        "sections": [
-          { "label": "Main Counter",    "detail": "Full meals, South Indian, North Indian — ₹25 to ₹70" },
-          { "label": "Fast Food Zone",  "detail": "Pizza, burgers, pasta, momos — ₹40 to ₹120" },
-          { "label": "Juice & Shakes",  "detail": "Fresh juice, milkshakes, lassi, tea, coffee" },
-          { "label": "Faculty Section", "detail": "Reserved seating, menu card service for staff" }
+          {
+            "label": "Cricket Ground",
+            "detail": "Full-size cricket pitch with practice nets"
+          },
+          {
+            "label": "Basketball Court",
+            "detail": "Two courts, open for students after 4 PM"
+          },
+          {
+            "label": "Volleyball Court",
+            "detail": "Available for inter-department tournaments"
+          },
+          {
+            "label": "Sports Room",
+            "detail": "Chess, table tennis, carrom, indoor games equipment"
+          }
         ]
       }
     }
