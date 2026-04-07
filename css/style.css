@@ -1,9 +1,6 @@
-/* ============================================
-   style.css — Smart Campus Navigation
-   Shared across ALL pages
-   ============================================ */
+/*style.css — Smart Campus Navigation(For all)*/
 
-/* ---------- Reset & Base ---------- */
+/*Base*/
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +8,8 @@
 }
 
 html {
-  overflow-x: hidden;   /* prevent horizontal scrollbar from any overflow */
+  overflow-x: hidden;
+  /* prevent horizontal scrollbar from any overflow */
   width: 100%;
 }
 
@@ -34,7 +32,7 @@ img {
   display: block;
 }
 
-/* ---------- Navbar ---------- */
+/*Navbar*/
 .navbar {
   background-color: #1a3c5e;
   color: #fff;
@@ -42,7 +40,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  flex-wrap: wrap;          /* allow wrap on narrow screens */
+  flex-wrap: wrap;
+  /* allow wrap on narrow screens */
   gap: 8px;
   width: 100%;
 }
@@ -78,7 +77,7 @@ img {
   text-decoration: underline;
 }
 
-/* ---------- Page Header ---------- */
+/*Page Header*/
 .page-header {
   background-color: #1a3c5e;
   color: #fff;
@@ -97,14 +96,14 @@ img {
   opacity: 0.8;
 }
 
-/* ---------- Main Container ---------- */
+/*Main Container*/
 .container {
   max-width: 960px;
   margin: 40px auto;
   padding: 0 20px;
 }
 
-/* ---------- Buttons ---------- */
+/*Buttons*/
 .btn {
   display: inline-block;
   background-color: #1a3c5e;
@@ -132,16 +131,15 @@ img {
   color: #fff;
 }
 
-/* =============================================
-   LOGIN PAGE
-   ============================================= */
+/*LOGIN PAGE*/
 .login-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
   background-color: #e8eef4;
-  padding: 20px;            /* prevents box from touching viewport edge */
+  padding: 20px;
+  /* prevents box from touching viewport edge */
 }
 
 .login-box {
@@ -213,9 +211,7 @@ img {
   text-align: center;
 }
 
-/* =============================================
-   CAMPUS SELECTION PAGE
-   ============================================= */
+/*CAMPUS SELECTION PAGE*/
 .campus-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
@@ -273,9 +269,7 @@ img {
   color: #5a7a99;
 }
 
-/* =============================================
-   MAP PAGE — Interactive Overlay
-   ============================================= */
+/*MAP PAGE(Interactive Overlay)*/
 .map-section {
   margin-bottom: 32px;
 }
@@ -293,11 +287,11 @@ img {
   margin-bottom: 12px;
 }
 
-/* The map container — image + zones layered on top */
+/* The map holder*/
 .map-container {
   position: relative;
   width: 100%;
-  min-height: 300px;        /* fallback: never collapse if image is missing */
+  min-height: 300px;
   border: 2px solid #c2d3e3;
   border-radius: 8px;
   overflow: hidden;
@@ -307,7 +301,7 @@ img {
 
 .map-container img {
   width: 100%;
-  height: auto;        /* show the full image — no cropping */
+  height: auto;
   display: block;
   object-fit: contain;
 }
@@ -324,7 +318,7 @@ img {
   font-size: 0.9rem;
 }
 
-/* ---- Clickable zone overlay ---- */
+/*Clickable zone overlay*/
 .map-zone {
   position: absolute;
   background-color: rgba(26, 60, 94, 0.25);
@@ -344,7 +338,7 @@ img {
   border-color: #1a3c5e;
 }
 
-/* Label shown inside the zone */
+/*Label shown inside the zone*/
 .zone-label {
   background-color: #1a3c5e;
   color: #fff;
@@ -352,11 +346,12 @@ img {
   font-weight: 700;
   padding: 3px 8px;
   border-radius: 4px;
-  white-space: nowrap;      /* original: single-line label, overflows zone box */
+  white-space: nowrap;
+  /* original: single-line label, overflows zone box */
   pointer-events: none;
 }
 
-/* Adjust zone note */
+/*Adjust zone note*/
 .zone-adjust-note {
   font-size: 0.78rem;
   color: #888;
@@ -377,9 +372,7 @@ img {
   text-decoration: underline;
 }
 
-/* =============================================
-   DETAILS PAGE
-   ============================================= */
+/*DETAILS PAGE*/
 .details-card {
   background: #fff;
   border: 1px solid #ccd8e4;
@@ -442,7 +435,7 @@ img {
   background-color: #f0f5fa;
 }
 
-/* Sections list — inside-building breakdown */
+/*Sections list*/
 .sections-list {
   list-style: none;
   margin-bottom: 24px;
@@ -476,9 +469,7 @@ img {
   line-height: 1.5;
 }
 
-/* =============================================
-   FOOTER
-   ============================================= */
+/*FOOTER*/
 .footer {
   background-color: #1a3c5e;
   color: #aac0d4;
@@ -488,9 +479,7 @@ img {
   margin-top: 60px;
 }
 
-/* =============================================
-   ERROR / LOADING STATE
-   ============================================= */
+/*ERROR/LOADING*/
 .loading-text {
   text-align: center;
   color: #666;
@@ -505,9 +494,7 @@ img {
   font-size: 0.95rem;
 }
 
-/* =============================================
-   RESPONSIVE — Tablet / Medium (600px – 900px)
-   ============================================= */
+/*RESPONSIVE(Tab)*/
 @media (max-width: 900px) {
   .container {
     padding: 0 16px;
@@ -530,9 +517,7 @@ img {
   }
 }
 
-/* =============================================
-   RESPONSIVE — Mobile (≤ 600px)
-   ============================================= */
+/*RESPONSIVE(Mob)*/
 @media (max-width: 600px) {
   .navbar {
     flex-direction: column;
