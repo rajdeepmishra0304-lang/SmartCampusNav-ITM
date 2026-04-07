@@ -7,32 +7,32 @@ var CAMPUS_DATA = {
   "turari": {
     "campus_name": "ITM Turari Campus",
     "buildings": {
-      "academic-block": {
-        "name": "Academic Block",
-        "description": "The Academic Block is the main teaching hub of ITM Turari. It houses all classrooms, computer labs, and department offices for undergraduate engineering programs.",
-        "image": "images/turari-academic.jpg",
+      "jcb-block": {
+        "name": "JC Bose Block",
+        "description": "The JC Bose block mainly hosts classes for electrical students and is well equipped with proper labs and equipments. It also has the ERP cell and VC office.",
+        "image": "images/turari-jcb.jpg",
         "floor": "4 Floors",
         "capacity": "2000 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "CSE & IT Department offices, Computer Lab 1 & 2" },
-          { "label": "First Floor", "detail": "Mechanical & Civil Engineering classrooms, Drawing Hall" },
-          { "label": "Second Floor", "detail": "Electronics & Electrical labs, Seminar Hall (200 seats)" },
-          { "label": "Third Floor", "detail": "Faculty cabins, Principal Office, Conference Room" }
+          { "label": "Ground Floor", "detail": "Details about ground floor." },
+          { "label": "First Floor", "detail": "Details about first floor." },
+          { "label": "Second Floor", "detail": "Details about second floor." },
+          { "label": "Third Floor", "detail": "Details about third floor." }
         ]
       },
-      "hostel": {
+      "pcb-block": {
         "name": "PCB Block",
-        "description": "The Turari campus hostel provides comfortable residential facilities for outstation students with separate blocks for boys and girls.",
+        "description": "The PCB Block is the academic block for students pursuing pure science subjects like forensics, pharmacy etc.",
         "image": "images/turari-hostel.jpg",
-        "floor": "3 Floors",
-        "capacity": "500 Students",
-        "timing": "Open 24 Hours",
+        "floor": "4 Floors",
+        "capacity": "2000 Students",
+        "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
-          { "label": "Boys Block A", "detail": "120 rooms, double occupancy, AC & Non-AC options" },
-          { "label": "Boys Block B", "detail": "80 rooms, Wi-Fi enabled, 24/7 security" },
-          { "label": "Girls Block", "detail": "100 rooms, separate warden, CCTV surveillance" },
-          { "label": "Common Area", "detail": "TV lounge, indoor games, RO water facility" }
+          { "label": "Ground Floor", "detail": "Details about ground floor." },
+          { "label": "First Floor", "detail": "Details about first floor." },
+          { "label": "Second Floor", "detail": "Details about second floor." },
+          { "label": "Third Floor", "detail": "Details about third floor." }
         ]
       },
       "canteen": {
@@ -51,40 +51,44 @@ var CAMPUS_DATA = {
       },
       "leonardo-block": {
         "name": "Leonardo da Vinci Block",
-        "description": "The Leonardo da Vinci Block is dedicated to innovation and applied sciences. It houses advanced research labs, project rooms, and interdisciplinary studios for creative engineering.",
+        "description": "The Leonardo da Vinci Block is dedicated to management courses along with being the main admin block. It also houses the central library.",
         "image": "images/turari-leonardo.jpg",
-        "floor": "3 Floors",
-        "capacity": "800 Students",
+        "floor": "4 Floors",
+        "capacity": "2000 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "Innovation Lab, Robotics Lab, 3D Printing Studio" },
-          { "label": "First Floor", "detail": "Project Development Rooms, Group Study Areas" },
-          { "label": "Second Floor", "detail": "Research Lab, Faculty Offices, Conference Room" }
+          { "label": "Ground Floor", "detail": "Details about ground floor." },
+          { "label": "First Floor", "detail": "Details about first floor." },
+          { "label": "Second Floor", "detail": "Details about second floor." },
+          { "label": "Third Floor", "detail": "Details about third floor." }
         ]
       },
       "gandhi-block": {
         "name": "Mahatma Gandhi Block",
-        "description": "The Mahatma Gandhi Block is the centre for humanities, management, and social sciences. It features large lecture halls, seminar rooms, and a media room.",
+        "description": "The Mahatma Gandhi Block is the centre for technological subjects like CS, IT etc.",
         "image": "images/turari-gandhi.jpg",
-        "floor": "3 Floors",
-        "capacity": "1000 Students",
+        "floor": "4 Floors",
+        "capacity": "2000 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "MBA Classrooms, Case Study Room, Placement Cell" },
-          { "label": "First Floor", "detail": "BBA Classrooms, Commerce Labs, Seminar Hall" },
-          { "label": "Second Floor", "detail": "Media Room, Language Lab, HOD Office" }
+          { "label": "Ground Floor", "detail": "Details about ground floor." },
+          { "label": "First Floor", "detail": "Details about first floor." },
+          { "label": "Second Floor", "detail": "Details about second floor." },
+          { "label": "Third Floor", "detail": "Details about third floor." }
         ]
       },
       "kirloskar-block": {
         "name": "Kirloskar Block",
-        "description": "The Kirloskar Block is the engineering and manufacturing hub, equipped with heavy machinery labs, workshop areas, and technical training facilities.",
+        "description": "The Kirloskar Block is the engineering hub, equipped with heavy machinery labs, workshop areas, and technical training facilities.",
         "image": "images/turari-kirloskar.jpg",
-        "floor": "2 Floors",
-        "capacity": "600 Students",
-        "timing": "8:00 AM \u2013 5:00 PM",
+        "floor": "4 Floors",
+        "capacity": "2000 Students",
+        "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
-          { "label": "Ground Floor", "detail": "Mechanical Workshop, Welding Lab, Fitting Shop" },
-          { "label": "First Floor", "detail": "Electrical Lab, Power Electronics Lab, Control Systems Room" }
+          { "label": "Ground Floor", "detail": "Details about ground floor." },
+          { "label": "First Floor", "detail": "Details about first floor." },
+          { "label": "Second Floor", "detail": "Details about second floor." },
+          { "label": "Third Floor", "detail": "Details about third floor." }
         ]
       },
       "sports-department": {
@@ -106,20 +110,16 @@ var CAMPUS_DATA = {
 };
 
 
-/* ============================================================
-   UTILITY: Get URL query parameter by name
-   Usage: getParam("campus") => "turari"
-   ============================================================ */
+/* UTILITY: Get URL query parameter by name
+   Usage: getParam("campus") => "turari"*/
 function getParam(name) {
   var params = new URLSearchParams(window.location.search);
   return params.get(name);
 }
 
 
-/* ============================================================
-   LOGIN PAGE — index.html
-   Checks username = "admin", password = "1234"
-   ============================================================ */
+/*LOGIN PAGE — index.html
+   Checks username = "admin", password = "1234"*/
 function initLoginPage() {
   var form = document.getElementById("login-form");
   if (!form) return;
@@ -147,9 +147,7 @@ function initLoginPage() {
 }
 
 
-/* ============================================================
-   MAP PAGES — turari-map.html / sithouli-map.html
-   ============================================================ */
+/* MAP PAGES*/
 function initMapPage() {
   var buttons = document.querySelectorAll(".building-btn");
   if (buttons.length === 0) return;
@@ -164,10 +162,7 @@ function initMapPage() {
 }
 
 
-/* ============================================================
-   DETAILS PAGE — details.html
-   Reads URL params → looks up inline CAMPUS_DATA → renders
-   ============================================================ */
+/*DETAILS PAGE*/
 function initDetailsPage() {
   var container = document.getElementById("details-container");
   if (!container) return;
@@ -233,9 +228,7 @@ function renderDetails(container, b, campusName) {
 }
 
 
-/* ============================================================
-   INIT — Run the right function based on current page
-   ============================================================ */
+/*INIT — Run the right function based on current page*/
 document.addEventListener("DOMContentLoaded", function () {
   initLoginPage();
   initMapPage();
