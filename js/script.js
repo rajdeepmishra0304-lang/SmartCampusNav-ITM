@@ -10,7 +10,7 @@ var CAMPUS_DATA = {
       "jcb-block": {
         "name": "JC Bose Block",
         "description": "The JC Bose block mainly hosts classes for electrical students and is well equipped with proper labs and equipments. It also has the ERP cell and VC office.",
-        "image": "images/turari-jcb.jpg",
+        "image": "images/jcb-block.jpg",
         "floor": "4 Floors",
         "capacity": "2000 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
@@ -24,9 +24,9 @@ var CAMPUS_DATA = {
       "pcb-block": {
         "name": "PCB Block",
         "description": "The PCB Block is the academic block for students pursuing pure science subjects like forensics, pharmacy etc.",
-        "image": "images/turari-hostel.jpg",
+        "image": "images/pcb-block.jpg",
         "floor": "4 Floors",
-        "capacity": "2000 Students",
+        "capacity": "500 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "Details about ground floor." },
@@ -54,7 +54,7 @@ var CAMPUS_DATA = {
         "description": "The Leonardo da Vinci Block is dedicated to management courses along with being the main admin block. It also houses the central library.",
         "image": "images/turari-leonardo.jpg",
         "floor": "4 Floors",
-        "capacity": "2000 Students",
+        "capacity": "500 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "Details about ground floor." },
@@ -68,7 +68,7 @@ var CAMPUS_DATA = {
         "description": "The Mahatma Gandhi Block is the centre for technological subjects like CS, IT etc.",
         "image": "images/turari-gandhi.jpg",
         "floor": "4 Floors",
-        "capacity": "2000 Students",
+        "capacity": "500 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "Details about ground floor." },
@@ -82,7 +82,7 @@ var CAMPUS_DATA = {
         "description": "The Kirloskar Block is the engineering hub, equipped with heavy machinery labs, workshop areas, and technical training facilities.",
         "image": "images/turari-kirloskar.jpg",
         "floor": "4 Floors",
-        "capacity": "2000 Students",
+        "capacity": "500 Students",
         "timing": "8:00 AM \u2013 6:00 PM",
         "sections": [
           { "label": "Ground Floor", "detail": "Details about ground floor." },
@@ -101,8 +101,7 @@ var CAMPUS_DATA = {
         "sections": [
           { "label": "Cricket Ground", "detail": "Full-size cricket pitch with practice nets" },
           { "label": "Basketball Court", "detail": "Two courts, open for students after 4 PM" },
-          { "label": "Volleyball Court", "detail": "Available for inter-department tournaments" },
-          { "label": "Sports Room", "detail": "Chess, table tennis, carrom, indoor games equipment" }
+          { "label": "Volleyball Court", "detail": "Available for inter-department tournaments" }
         ]
       }
     }

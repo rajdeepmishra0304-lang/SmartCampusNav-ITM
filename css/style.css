@@ -469,6 +469,48 @@ img {
   line-height: 1.5;
 }
 
+/*METRO MAP*/
+.metro-map-wrap {
+  background: #1a2535;
+  border-radius: 10px;
+  padding: 24px 12px 0;
+  overflow-x: auto;
+  border: 1px solid #2a3a55;
+}
+
+.metro-svg {
+  width: 100%;
+  min-width: 700px;
+  display: block;
+}
+
+.metro-station-link {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.metro-circle {
+  transition: filter 0.2s;
+}
+
+.metro-station-link:hover .metro-circle {
+  filter: brightness(1.35) drop-shadow(0 0 8px rgba(255,255,255,0.5));
+}
+
+.metro-label {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 11px;
+  fill: #ffffff;
+  font-weight: 600;
+  pointer-events: none;
+}
+
+.metro-legend {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  font-size: 11px;
+  fill: #9aaccc;
+}
+
 /*FOOTER*/
 .footer {
   background-color: #1a3c5e;
