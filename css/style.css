@@ -536,10 +536,11 @@ img {
   font-size: 0.95rem;
 }
 
-/*RESPONSIVE(Tab)*/
+/*RESPONSIVE (Tablet — 900px and below)*/
 @media (max-width: 900px) {
   .container {
     padding: 0 16px;
+    margin: 28px auto;
   }
 
   .page-header {
@@ -559,8 +560,10 @@ img {
   }
 }
 
-/*RESPONSIVE(Mob)*/
+/*RESPONSIVE (Mobile — 600px and below)*/
 @media (max-width: 600px) {
+
+  /* Navbar */
   .navbar {
     flex-direction: column;
     align-items: flex-start;
@@ -577,6 +580,7 @@ img {
     margin-right: 12px;
   }
 
+  /* Page header */
   .page-header h1 {
     font-size: 1.3rem;
   }
@@ -585,42 +589,95 @@ img {
     font-size: 0.88rem;
   }
 
+  /* Container */
+  .container {
+    margin: 20px auto;
+    padding: 0 14px;
+  }
+
+  /* Login */
   .login-box {
     padding: 24px 18px;
   }
 
+  /* Campus grid — single column */
   .campus-grid {
     grid-template-columns: 1fr;
   }
 
-  .building-buttons {
-    flex-direction: column;
-  }
-
-  .building-btn {
-    width: 100%;
+  /* Map — zone labels wrap instead of overflow */
+  .zone-label {
+    font-size: 0.65rem;
+    padding: 2px 5px;
+    white-space: normal;
     text-align: center;
+    line-height: 1.3;
   }
 
+  /* Map zones — minimum tap-friendly size */
+  .map-zone {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  /* Details page */
   .details-body {
     padding: 16px;
+  }
+
+  .details-body h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Details image */
+  .details-card .details-image,
+  .details-img-placeholder {
+    height: 200px;
+  }
+
+  /* Details table — prevent long words from overflowing */
+  .details-info-table td {
+    word-break: break-word;
+    font-size: 0.85rem;
+    padding: 8px 10px;
   }
 
   .details-info-table td:first-child {
     width: auto;
   }
 
+  /* Section items — stack label above detail on small screens */
+  .section-item {
+    flex-direction: column;
+    gap: 4px;
+  }
+
   .section-label {
-    min-width: 90px;
+    min-width: unset;
   }
 
-  .details-card .details-image,
-  .details-img-placeholder {
-    height: 200px;
-  }
-
-  .zone-label {
-    font-size: 0.65rem;
-    padding: 2px 4px;
+  /* Back link */
+  .back-link {
+    font-size: 0.85rem;
   }
 }
+
+/*RESPONSIVE (Small phones — 380px and below)*/
+@media (max-width: 380px) {
+  .page-header h1 {
+    font-size: 1.1rem;
+  }
+
+  .login-box {
+    padding: 20px 14px;
+  }
+
+  .details-body h2 {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.88rem;
+    padding: 9px 16px;
+  }
+}
